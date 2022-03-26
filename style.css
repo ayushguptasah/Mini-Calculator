@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #333;
+}
+
+.container {
+  position: relative;
+  min-width: 300px;
+  min-height: 480px;
+  background: #333;
+  padding: 40px 30px 30px;
+  border-radius: 20px;
+  box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25), inset -5px -5px 15px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.calc {
+  position: relative;
+  display: grid;
+}
+
+.calc .value {
+  position: relative;
+  grid-column: span 4;
+  height: 100px;
+  left: 10px;
+  width: calc(100% - 20px);
+  border: none;
+  outline: none;
+  background: #a7af7c;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  text-align: right;
+  padding: 10px;
+  font-size: 2rem;
+}
+
+span {
+  color: rgb(255, 255, 255);
+}
+
+.calc span {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 80px;
+  height: 80px;
+  margin: 8px;
+  background: linear-gradient(100deg, #3f3f3f);
+  box-shadow: inset -8px 0 8px rgba(0, 0, 0, 0.15),
+    inset 0 -8px 8px rgba(0, 0, 0, 0.25), 0 0 0 2px rgba(0, 0, 0, 0.75),
+    18px 20px 25px rgba(0, 0, 0, 0.4);
+  color: rgb(255, 255, 255);
+  user-select: none;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 10px;
+}
+
+.calc span::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  bottom: 14px;
+  right: 12px;
+  border-radius: 10px;
+  box-shadow: -5px -5px 15px rgba(0, 0, 0, 0.1),
+    10px 5px 10px rgba(0, 0, 0, 0.15);
+  border-left: 1px solid #0004;
+  border-bottom: 1px solid #0004;
+  border-top: 1px solid #0009;
+}
+
+.calc span:active {
+  filter: brightness(1.5);
+}
+
+.calc span i {
+  position: relative;
+  font-style: normal;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.calc .clear {
+  background: rgb(5, 161, 65);
+}
+
+.calc .clear::before {
+  border-left: 1px solid #fff4;
+  border-bottom: 1px solid #fff4;
+  border-top: 1px solid #fff4;
+}
+
+.calc .plus {
+  grid-row: span 2;
+  height: 180px;
+}
+
+.calc .equals {
+  background: #2196f3;
+}
+
+.calc .equals::before {
+  border-left: 1px solid #fff4;
+  border-bottom: 1px solid #fff4;
+  border-top: 1px solid #fff4;
+}
