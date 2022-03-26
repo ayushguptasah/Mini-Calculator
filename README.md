@@ -1,3 +1,3 @@
 # Mini-Calculator
 ## Arithmetic Calculation (Using HTML, CSS JavaScript)
-![Screenshot (79)](https://user-images.githubusercontent.com/72430178/160253156-8a127c66-38a9-4452-b632-2184dc118d93.png)
+![Screenshot (80)](https://user-images.githubusercontent.com/72430178/160253502-05295c76-420c-4eaf-9f53-c14c056bd07b.png)
